@@ -30,6 +30,7 @@
     "postlight-parser": "./cli.js"
   },
   "scripts": {
+    "start": "node server.js",
     "lint": "eslint . --fix",
     "lint:ci": "remark . && eslint .",
     "lint-fix-quiet": "eslint --fix --quiet",
@@ -81,7 +82,6 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.3",
-    "express": "^4.16.4",
     "husky": "^3.0.0",
     "inquirer": "^7.0.0",
     "jasmine-core": "^2.5.2",
@@ -116,10 +116,13 @@
   "dependencies": {
     "@babel/runtime-corejs2": "^7.2.0",
     "@postlight/ci-failed-test-reporter": "^1.0",
+    "@postlight/mercury-parser": "^2.2.3",
     "browser-request": "github:postlight/browser-request#feat-add-headers-to-response",
     "cheerio": "^0.22.0",
+    "cors": "^2.8.5",
     "difflib": "github:postlight/difflib.js",
     "ellipsize": "0.1.0",
+    "express": "^4.16.4",
     "iconv-lite": "0.5.0",
     "jquery": "^3.5.0",
     "moment": "^2.23.0",
